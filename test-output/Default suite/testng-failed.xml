@@ -5,7 +5,7 @@
     <classes>
       <class name="com.saucedemo.qa.testsuite.LoginTests">
         <methods>
-          <include name="loginTest_performance_glitch_user"/>
+          <include name="loginTestFor_standard_user"/>
           <include name="createDriver"/>
           <include name="closeDriver"/>
         </methods>
