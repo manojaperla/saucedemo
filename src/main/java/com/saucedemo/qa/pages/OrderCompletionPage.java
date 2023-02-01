@@ -3,12 +3,10 @@ package com.saucedemo.qa.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class OrderCompletionPage {
-	
-	WebDriver driver = null;
+public class OrderCompletionPage extends BasePage {
 	
 	public OrderCompletionPage(WebDriver driver) {
-		this.driver = driver;
+		super(driver);
 		
 	}
 	

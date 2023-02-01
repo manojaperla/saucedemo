@@ -3,12 +3,10 @@ package com.saucedemo.qa.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class InformationPage {
-	
-	WebDriver driver = null;
+public class InformationPage extends BasePage {
 	
 	public InformationPage(WebDriver driver) {
-		this.driver = driver;
+		super(driver);
 		
 	}
 	
