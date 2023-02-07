@@ -1,7 +1,10 @@
 package com.saucedemo.qa.testsuite;
 
+import java.util.Map;
+
 import org.testng.annotations.Test;
 
+import com.saucedemo.qa.dp.DataManagement;
 import com.saucedemo.qa.pages.CheckoutPage;
 import com.saucedemo.qa.pages.InformationPage;
 import com.saucedemo.qa.pages.LoginPage;
@@ -11,11 +14,13 @@ import com.saucedemo.qa.pages.ProductPage;
 
 public class OdersTestSuite extends BaseTestSuite {
 	
-	@Test
-	public void createOrderForBikeLight() throws InterruptedException {
+	@Test(dataProvider = "sauceDemoData", dataProviderClass = DataManagement.class)
+	public void createOrderForBikeLight(Map<String, String> testData) throws InterruptedException {
+		System.out.println(testData);
+		
 		//Login
 		LoginPage login = new LoginPage(this.driver);
-		login.doLogin(BaseTestSuite.appProperties.getProperty("app.url"));
+		login.doLogin(testData.get("UserName"));
 		try {
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -25,9 +30,9 @@ public class OdersTestSuite extends BaseTestSuite {
 		
 		//Add Product to Order
 		ProductPage productPage = new ProductPage(this.driver);
-		productPage.addItemCart("Sauce Labs Bike Light");
-		productPage.addItemCart("Sauce Labs Backpack");
-		productPage.addItemCart("Sauce Labs Fleece Jacket");
+		productPage.addItemCart(testData.get("Product_1"));
+		productPage.addItemCart(testData.get("Product_2"));
+		productPage.addItemCart(testData.get("Product_3"));
 		productPage.checkout();
 		waitForSomeSeconds(3);
 		

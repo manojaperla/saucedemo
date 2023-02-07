@@ -1,25 +1,300 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="1" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-30T19:21:19 EST" name="Default suite" finished-at="2023-01-30T19:21:32 EST" duration-ms="13532">
+  <suite started-at="2023-02-06T19:01:28 EST" name="Default suite" finished-at="2023-02-06T19:02:34 EST" duration-ms="66706">
     <groups>
     </groups>
-    <test started-at="2023-01-30T19:21:19 EST" name="Default test" finished-at="2023-01-30T19:21:32 EST" duration-ms="13532">
-      <class name="com.saucedemo.qa.testsuite.CheckStaleElementIssues">
-        <test-method is-config="true" signature="createDriver()[pri:0, instance:com.saucedemo.qa.testsuite.CheckStaleElementIssues@3b6ddd1d]" started-at="2023-01-30T19:21:19 EST" name="createDriver" finished-at="2023-01-30T19:21:29 EST" duration-ms="10446" status="PASS">
+    <test started-at="2023-02-06T19:01:28 EST" name="Default test" finished-at="2023-02-06T19:02:34 EST" duration-ms="66706">
+      <class name="com.saucedemo.qa.testsuite.OdersTestSuite">
+        <test-method is-config="true" signature="BeforeSuite()[pri:0, instance:com.saucedemo.qa.testsuite.OdersTestSuite@29215f06]" started-at="2023-02-06T19:01:28 EST" name="BeforeSuite" finished-at="2023-02-06T19:01:28 EST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:com.saucedemo.qa.testsuite.OdersTestSuite@29215f06]" started-at="2023-02-06T19:01:29 EST" name="createDriver" finished-at="2023-02-06T19:01:37 EST" duration-ms="8231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDriver -->
-        <test-method signature="staleelementTest()[pri:0, instance:com.saucedemo.qa.testsuite.CheckStaleElementIssues@3b6ddd1d]" started-at="2023-01-30T19:21:29 EST" name="staleelementTest" finished-at="2023-01-30T19:21:32 EST" duration-ms="2412" status="PASS">
+        <test-method signature="createOrderForBikeLight(java.util.Map)[pri:0, instance:com.saucedemo.qa.testsuite.OdersTestSuite@29215f06]" started-at="2023-02-06T19:01:37 EST" name="createOrderForBikeLight" data-provider="sauceDemoData" finished-at="2023-02-06T19:01:42 EST" duration-ms="4753" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Product_1=Sauce Labs Bike Ligh, Product_2=Sauce Labs Backpack, UserName=standard_user, Product_3=Sauce Labs Fleece Jacket, TestCaseName=Test_01}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Sauce Labs Bike Ligh']/../../..//button[text()='Add to cart']"}
+  (Session info: chrome=109.0.5414.119)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'Sunils-MacBook-Air.local', ip: 'fe80:0:0:0:855:5613:1516:f39e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.2', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/w3/4n_vml9n4cv...}, goog:chromeOptions: {debuggerAddress: localhost:53298}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: af618b3435e2c2a1468c7472d53c1f0d
+*** Element info: {Using=xpath, value=//div[text()='Sauce Labs Bike Ligh']/../../..//button[text()='Add to cart']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Sauce Labs Bike Ligh']/../../..//button[text()='Add to cart']"}
+  (Session info: chrome=109.0.5414.119)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'Sunils-MacBook-Air.local', ip: 'fe80:0:0:0:855:5613:1516:f39e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.2', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/w3/4n_vml9n4cv...}, goog:chromeOptions: {debuggerAddress: localhost:53298}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: af618b3435e2c2a1468c7472d53c1f0d
+*** Element info: {Using=xpath, value=//div[text()='Sauce Labs Bike Ligh']/../../..//button[text()='Add to cart']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.saucedemo.qa.pages.ProductPage.addItemCart(ProductPage.java:15)
+at com.saucedemo.qa.testsuite.OdersTestSuite.createOrderForBikeLight(OdersTestSuite.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- staleelementTest -->
-        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.saucedemo.qa.testsuite.CheckStaleElementIssues@3b6ddd1d]" started-at="2023-01-30T19:21:32 EST" name="closeDriver" finished-at="2023-01-30T19:21:32 EST" duration-ms="533" status="PASS">
+        </test-method> <!-- createOrderForBikeLight -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.saucedemo.qa.testsuite.OdersTestSuite@29215f06]" started-at="2023-02-06T19:01:42 EST" name="closeDriver" finished-at="2023-02-06T19:01:43 EST" duration-ms="784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- com.saucedemo.qa.testsuite.CheckStaleElementIssues -->
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:com.saucedemo.qa.testsuite.OdersTestSuite@29215f06]" started-at="2023-02-06T19:01:43 EST" name="createDriver" finished-at="2023-02-06T19:01:48 EST" duration-ms="4706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method signature="createOrderForBikeLight(java.util.Map)[pri:0, instance:com.saucedemo.qa.testsuite.OdersTestSuite@29215f06]" started-at="2023-02-06T19:01:48 EST" name="createOrderForBikeLight" data-provider="sauceDemoData" finished-at="2023-02-06T19:01:52 EST" duration-ms="3952" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Product_1=Sauce Labs Bike Ligh, Product_2=Sauce Labs Backpack, UserName=standard_user, Product_3=null, TestCaseName=Test_02}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Sauce Labs Bike Ligh']/../../..//button[text()='Add to cart']"}
+  (Session info: chrome=109.0.5414.119)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'Sunils-MacBook-Air.local', ip: 'fe80:0:0:0:855:5613:1516:f39e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.2', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/w3/4n_vml9n4cv...}, goog:chromeOptions: {debuggerAddress: localhost:53315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e9385181582686300255920bf7af9272
+*** Element info: {Using=xpath, value=//div[text()='Sauce Labs Bike Ligh']/../../..//button[text()='Add to cart']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='Sauce Labs Bike Ligh']/../../..//button[text()='Add to cart']"}
+  (Session info: chrome=109.0.5414.119)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'Sunils-MacBook-Air.local', ip: 'fe80:0:0:0:855:5613:1516:f39e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.2', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/w3/4n_vml9n4cv...}, goog:chromeOptions: {debuggerAddress: localhost:53315}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e9385181582686300255920bf7af9272
+*** Element info: {Using=xpath, value=//div[text()='Sauce Labs Bike Ligh']/../../..//button[text()='Add to cart']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.saucedemo.qa.pages.ProductPage.addItemCart(ProductPage.java:15)
+at com.saucedemo.qa.testsuite.OdersTestSuite.createOrderForBikeLight(OdersTestSuite.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrderForBikeLight -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.saucedemo.qa.testsuite.OdersTestSuite@29215f06]" started-at="2023-02-06T19:01:52 EST" name="closeDriver" finished-at="2023-02-06T19:01:52 EST" duration-ms="253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:com.saucedemo.qa.testsuite.OdersTestSuite@29215f06]" started-at="2023-02-06T19:01:52 EST" name="createDriver" finished-at="2023-02-06T19:01:56 EST" duration-ms="4455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method signature="createOrderForBikeLight(java.util.Map)[pri:0, instance:com.saucedemo.qa.testsuite.OdersTestSuite@29215f06]" started-at="2023-02-06T19:01:56 EST" name="createOrderForBikeLight" data-provider="sauceDemoData" finished-at="2023-02-06T19:02:24 EST" duration-ms="27705" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Product_1=Sauce Labs Backpack, Product_2=null, UserName=standard_user, Product_3=null, TestCaseName=Test_03}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrderForBikeLight -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.saucedemo.qa.testsuite.OdersTestSuite@29215f06]" started-at="2023-02-06T19:02:24 EST" name="closeDriver" finished-at="2023-02-06T19:02:24 EST" duration-ms="414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="createDriver()[pri:0, instance:com.saucedemo.qa.testsuite.OdersTestSuite@29215f06]" started-at="2023-02-06T19:02:24 EST" name="createDriver" finished-at="2023-02-06T19:02:29 EST" duration-ms="4428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method signature="createOrderForBikeLight(java.util.Map)[pri:0, instance:com.saucedemo.qa.testsuite.OdersTestSuite@29215f06]" started-at="2023-02-06T19:02:29 EST" name="createOrderForBikeLight" data-provider="sauceDemoData" finished-at="2023-02-06T19:02:34 EST" duration-ms="5199" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Product_1=Sauce Labs Fleece Jacket, Product_2=sauce Labs Bolt T-Shirt, UserName=standard_user, Product_3=null, TestCaseName=Test_04}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='sauce Labs Bolt T-Shirt']/../../..//button[text()='Add to cart']"}
+  (Session info: chrome=109.0.5414.119)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'Sunils-MacBook-Air.local', ip: 'fe80:0:0:0:855:5613:1516:f39e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.2', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/w3/4n_vml9n4cv...}, goog:chromeOptions: {debuggerAddress: localhost:53347}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a6958f13b999b46c424b4b534b5700e
+*** Element info: {Using=xpath, value=//div[text()='sauce Labs Bolt T-Shirt']/../../..//button[text()='Add to cart']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[text()='sauce Labs Bolt T-Shirt']/../../..//button[text()='Add to cart']"}
+  (Session info: chrome=109.0.5414.119)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.5', revision: 'd54ebd709a', time: '2018-11-06T11:42:16'
+System info: host: 'Sunils-MacBook-Air.local', ip: 'fe80:0:0:0:855:5613:1516:f39e%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.7.2', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.119, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/w3/4n_vml9n4cv...}, goog:chromeOptions: {debuggerAddress: localhost:53347}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1a6958f13b999b46c424b4b534b5700e
+*** Element info: {Using=xpath, value=//div[text()='sauce Labs Bolt T-Shirt']/../../..//button[text()='Add to cart']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.saucedemo.qa.pages.ProductPage.addItemCart(ProductPage.java:15)
+at com.saucedemo.qa.testsuite.OdersTestSuite.createOrderForBikeLight(OdersTestSuite.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrderForBikeLight -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:com.saucedemo.qa.testsuite.OdersTestSuite@29215f06]" started-at="2023-02-06T19:02:34 EST" name="closeDriver" finished-at="2023-02-06T19:02:34 EST" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- com.saucedemo.qa.testsuite.OdersTestSuite -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
