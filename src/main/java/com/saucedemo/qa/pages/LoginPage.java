@@ -29,7 +29,7 @@ public class LoginPage extends BasePage {
 	
 	public void doLogin(String userName) {
 		txtUserName.sendKeys(userName);
-		txtPassword.sendKeys("sdfdsfds");
+		txtPassword.sendKeys("secret_sauce");
 		javaScriptMethod(btnLogin);
 		
 		

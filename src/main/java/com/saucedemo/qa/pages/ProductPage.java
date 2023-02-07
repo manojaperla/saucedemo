@@ -11,7 +11,9 @@ public class ProductPage extends BasePage {
 	}
 	
 	public void addItemCart(String itemName) {
-		driver.findElement(By.xpath("//div[text()='"+itemName+"']/../../..//button[text()='Add to cart']")).click();
+		if(itemName!=null) {
+			driver.findElement(By.xpath("//div[text()='"+itemName+"']/../../..//button[text()='Add to cart']")).click();
+		}
 	}
 	
 	public void checkout() {
